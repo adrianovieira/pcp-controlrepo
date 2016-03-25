@@ -8,7 +8,5 @@ node 'puppetserver.hacklab' {
   include role::puppetmaster
 }
 node 'puppet-pcpm.hacklab' {
-  include role::puppetmaster
-  include role::puppetdb
-  include role::broker
+  include role::pcpm
 }

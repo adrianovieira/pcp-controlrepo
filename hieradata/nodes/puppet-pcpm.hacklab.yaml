@@ -1,4 +1,5 @@
 profiles::puppet::agent::puppetmaster: 'puppet-pcpm.hacklab'
+profiles::puppet::master::puppetdb_server: 'puppet-pcpm.hacklab'
 profiles::puppetdb::database_server_hostname: 'puppet-pcpm.hacklab'
 profiles::puppetdb::puppetdb_server_hostname: 'puppet-pcpm.hacklab'
 profiles::mcollective::broker_host: 'puppet-pcpm.hacklab'

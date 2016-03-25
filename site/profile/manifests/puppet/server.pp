@@ -9,7 +9,7 @@ class profile::puppet::server {
 
   $jruby_instances = $::processorcount * 2
 
-  $server_java_opts = "-Xms512m -Xmx512m"
+  $server_java_opts = '-Xms512m -Xmx512m'
 
   # Bug relacionado: https://tickets.puppetlabs.com/browse/SERVER-557
   file {'/etc/systemd/system/puppetserver.service.d':

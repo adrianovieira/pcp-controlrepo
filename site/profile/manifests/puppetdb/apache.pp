@@ -1,10 +1,11 @@
 class profile::puppetdb::apache {
 
+  $vhost_name = hiera('profiles::puppetdb::puppetdb_server_hostname')
+
   class { 'apache':
     default_vhost => false,
   }
 
-  $vhost_name = hiera('profiles::puppetdb::puppetdb_server_hostname')
   apache::vhost { "${vhost_name}_default":
     servername => $vhost_name,
     port       => '80',

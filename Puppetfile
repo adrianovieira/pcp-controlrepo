@@ -19,6 +19,12 @@ mod 'puppetlabs/concat', '1.2.5'
 mod 'puppetlabs/firewall', '1.8.0'
 mod 'puppetlabs/inifile', '1.4.3'
 mod 'puppetlabs/stdlib', '4.11.0'
+mod 'puppetlabs-apt', '2.2.2'
+mod 'puppetlabs/ruby'
+mod 'puppetlabs/gcc'
+mod 'puppetlabs/pe_gem'
+mod 'croddy/make'
+mod 'gentoo/portage'
 
 mod 'instruct/activemq',
   :git => 'https://bitbucket.org/instruct/puppet-activemq.git',

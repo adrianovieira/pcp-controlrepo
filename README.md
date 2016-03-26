@@ -19,3 +19,42 @@ Mais informações acesse
 ### Contribuidores
 
 * Adriano Vieira
+
+## Estrutura
+
+```
+- environments
+- - production
+- - - Puppetfile
+- - - environment.conf
+- - - hieradata
+- - - - nodes
+- - - - - puppet-pcpm.hacklab.yaml
+- - - - Debian-8.yaml
+- - - - RedHat-7.yaml
+- - - - common.yaml
+- - - manifests
+- - - - site.pp
+- - - site
+- - - - profile
+- - - - - manifests
+- - - - - - mcollective
+- - - - - - - client.pp
+- - - - - - - server.pp
+- - - - - - puppet
+- - - - - - - hiera.pp
+- - - - - - - agent.pp
+- - - - - - - server.pp
+- - - - - - puppetdb
+- - - - - - - app.pp
+- - - - - - - database.pp
+- - - - - - - frontend.pp
+- - - - - - activemq.pp
+- - - - - - ntp.pp
+- - - - role
+- - - - - manifests
+- - - - - - broker.pp
+- - - - - - puppetdb.pp
+- - - - - - puppetmaster.pp
+- - - - - - pcpm.pp
+```

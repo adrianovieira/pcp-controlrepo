@@ -36,7 +36,7 @@ mod 'instruct/mcollective',
 
 mod 'instruct/puppet',
   :git => 'https://bitbucket.org/instruct/puppet-puppet.git',
-  :ref => 'master'
+  :ref => 'meetup'
 
 mod 'instruct/puppet_developer',
   :git => 'https://bitbucket.org/instruct/puppet-developer.git',

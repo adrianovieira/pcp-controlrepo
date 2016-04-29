@@ -30,8 +30,8 @@ mod 'instruct/activemq',
   :git => 'https://bitbucket.org/instruct/puppet-activemq.git',
   :ref => 'master'
 
-mod 'instruct/mcollective',
-  :git => 'https://bitbucket.org/instruct/puppet-mcollective.git',
+mod 'gutocarvalho/mcollective',
+  :git => 'https://gutocarvalho@bitbucket.org/gutocarvalho/puppet-mcollective.git',
   :ref => 'master'
 
 mod 'instruct/puppet',

@@ -7,8 +7,8 @@ class profile::puppetdb::frontend  {
   class { 'puppetexplorer':
     package_ensure => $puppetexplorer_version,
     vhost_options  => {
-      'priority' => '05'
+         'priority' => '05',
+          rewrites  => [ { rewrite_rule => ['^/api/metrics/v1/mbeans/puppetlabs.puppetdb.query.population:type=default,name=(.*)$  https://%{HTTP_HOST}/api/metrics/v1/mbeans/puppetlabs.puppetdb.population:name=$1 [R=301,L]'] } ]
     },
   }
-
 }

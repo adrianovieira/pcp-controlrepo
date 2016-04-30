@@ -3,7 +3,7 @@ class profile::puppetdb::apache {
   $vhost_name = hiera('profiles::puppetdb::puppetdb_server_hostname')
 
   firewall { '100 allow puppetdb':
-    dport  => [8080, 8081],
+    dport  => [80, 443],
     proto  => tcp,
     action => accept,
   }

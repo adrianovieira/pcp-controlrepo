@@ -8,6 +8,12 @@ class profile::puppet::server {
   $puppetdb_version = hiera('profiles::puppet::master::puppetdb_version')
 
   $jruby_instances = $::processorcount * 2
+  
+  firewall { '100 allow puppetserver access':
+    dport  => [8140],
+    proto  => tcp,
+    action => accept,
+  }
 
   $server_java_opts = '-Xms512m -Xmx512m'
 

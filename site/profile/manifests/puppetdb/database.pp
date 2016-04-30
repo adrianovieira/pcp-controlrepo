@@ -8,6 +8,12 @@ class profile::puppetdb::database {
   $puppetdb_pg_pass = hiera('profiles::puppetdb::pgconf::pass')
   $puppetdb_pg_host = hiera('profiles::puppetdb::pgconf::host')
 
+  firewall { '100 allow puppetdb database':
+    dport  => [5432],
+    proto  => tcp,
+    action => accept,
+  }
+
   class { 'postgresql::globals':
     encoding            => 'UTF-8',
     locale              => 'en_US.UTF-8',

@@ -2,6 +2,12 @@ class profile::activemq {
 
   $activemq_mco_password = hiera('profiles::activemq::mco_password')
 
+  firewall { '100 allow activemq':
+    dport  => [61613, 61614],
+    proto  => tcp,
+    action => accept,
+  }
+
   yumrepo { 'puppetlabs-deps':
     ensure   => 'present',
     baseurl  => 'http://yum.puppetlabs.com/el/7/dependencies/$basearch',

@@ -14,6 +14,13 @@ class profile::puppetdb::app {
   $java_heap_mem = hiera('profiles::puppetdb::java_heap_mem','256')
 
   validate_integer($statements_cache_size)
+  
+  firewall { '100 allow puppetdb app':
+    dport  => [8080, 8081],
+    proto  => tcp,
+    action => accept,
+  }
+
 
   $java_args = { '-Xmx' => "${java_heap_mem}m", '-Xms' => "${java_heap_mem}m" }
 

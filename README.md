@@ -11,12 +11,13 @@ This repo is used by PCP project itself.
 
 If you want more information about PCP
 
-    http://github.com/gutocarvalho/pcp
+    http://github.com/puppet-br/pcp
 
 ### Contributors
 
 * Adriano Vieira
 * Taciano Tres
+* Jairo Junior
 
 ## Structure
 

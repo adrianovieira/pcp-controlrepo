@@ -1,26 +1,24 @@
 # PCP CONTROL REPO
 
-## Autores
+## Authors
 
 * Guto Carvalho (gutocarvalho@gmail.com)
 * Miguel Di Ciurcio Filho (miguel.filho@gmail.com)
 
 ## Overview
 
-Este repo é utilizado pelo projeto PCP e PCP-M.
+This repo is used by PCP project itself.
 
-Ele é invocado através da ferramenta R10K e faz a instalação dos módulos necessários
-para instalação do Puppet Community Plataform (PCP).
-
-Mais informações acesse
+If you want more information about PCP
 
     http://github.com/gutocarvalho/pcp
 
-### Contribuidores
+### Contributors
 
 * Adriano Vieira
+* Taciano Tres
 
-## Estrutura
+## Structure
 
 ```
 - environments

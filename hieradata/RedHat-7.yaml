@@ -5,6 +5,6 @@ profiles::puppet::agent::agent_version: '1.4.2-1.el7'
 
 profiles::puppetdb::version: '4.0.2-1.el7'
 profiles::puppetdb::postgres_version: '9.4'
-profiles::puppetdb::postgres_package_version: '9.4.6-1PGDG.rhel7'
+profiles::puppetdb::postgres_package_version: '9.4.8-1PGDG.rhel7'
 
 profiles::puppetexplorer::version: '2.0.0-1'

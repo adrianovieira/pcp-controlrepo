@@ -26,13 +26,6 @@ class profile::puppetdb::database {
     package_ensure   => $postgres_package_version,
   }
 
-  postgresql::server::config_entry {
-    'checkpoint_segments':
-      value => '32';
-    'wal_keep_segments':
-      value => '64'
-  }
-
   postgresql::server::db { $puppetdb_pg_name:
     user     => $puppetdb_pg_user,
     password => postgresql_password($puppetdb_pg_user, $puppetdb_pg_pass)

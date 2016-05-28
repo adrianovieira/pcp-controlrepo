@@ -1,7 +1,7 @@
 profiles::puppet::agent::puppetmaster: 'puppetserver.hacklab'
 
 profiles::puppet::master::autosign: true
-profiles::puppet::master::r10k_version: '2.2.0'
+profiles::puppet::master::r10k_version: '2.3.0'
 profiles::puppet::master::puppetdb_server: 'puppetdb.hacklab'
 
 profiles::puppetdb::database_server_hostname: 'puppetdb.hacklab'

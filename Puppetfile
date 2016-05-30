@@ -2,7 +2,7 @@ forge "https://forgeapi.puppetlabs.com"
 
 mod 'hunner/hiera', '1.3.1'
 mod 'zack/r10k', '3.1.1'
-mod 'spotify/puppetexplorer', '1.0.1'
+mod 'spotify/puppetexplorer', '1.1.1'
 
 mod 'puppetlabs/apache', '1.7.1'
 mod 'puppetlabs/postgresql', '4.7.1'

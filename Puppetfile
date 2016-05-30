@@ -41,3 +41,8 @@ mod 'instruct/puppet',
 mod 'instruct/puppet_developer',
   :git => 'https://bitbucket.org/instruct/puppet-developer.git',
   :ref => 'master'
+
+mod 'stahnma/epel'
+mod 'adrianovieira/puppetboard',
+  :git => 'file:///home/vagrant/pcp-devel/pcp-puppetboard',
+  :ref => 'master'

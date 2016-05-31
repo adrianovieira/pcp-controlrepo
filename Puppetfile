@@ -44,5 +44,5 @@ mod 'instruct/puppet_developer',
 
 mod 'stahnma/epel'
 mod 'adrianovieira/puppetboard',
-  :git => 'file:///home/vagrant/pcp-devel/pcp-puppetboard',
+  :git => 'https://github.com/adrianovieira/pcp-puppetboard.git',
   :ref => 'master'

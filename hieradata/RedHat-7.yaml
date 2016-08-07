@@ -1,9 +1,9 @@
 profiles::puppet::master::server_version: '2.4.0-1.el7'
-profiles::puppet::master::puppetdb_version: '4.1.0-1.el7'
+profiles::puppet::master::puppetdb_version: '4.1.2-1.el7'
 
-profiles::puppet::agent::agent_version: '1.5.0-1.el7'
+profiles::puppet::agent::agent_version: '1.5.3-1.el7'
 
-profiles::puppetdb::version: '4.1.0-1.el7'
+profiles::puppetdb::version: '4.1.2-1.el7'
 profiles::puppetdb::postgres_version: '9.5'
 profiles::puppetdb::postgres_package_version: '9.5.3-2PGDG.rhel7'
 
